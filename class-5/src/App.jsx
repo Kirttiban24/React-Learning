@@ -26,7 +26,9 @@ const App = () => {
       {/* Example - Logic-2 */}
 
       {marks.map(function(elem,idx){
+
         return <h1 key={idx}>Student {idx+1} = {elem} ({elem>33?'PASS':"FAIL"})</h1>
+        
       })}
 
       <button onClick={graceStudent}>Give me the Grace</button>
